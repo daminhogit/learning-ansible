@@ -1,8 +1,6 @@
 - name: Just a play
-  hosts: linux
+  hosts: all
   tasks:
-    - name: ensure nano is there
-      yum:
-        name: nano
-        state: latest
-
+    - name: Print Hello
+        ansible.builtin.debug:
+          msg: hello daminho welcome to ansible
