@@ -20,7 +20,7 @@
 - name: Demo on vars from file on play level
   hosts: localhost
   vars_files:
-    - sample.vars.yml
+    - sample-vars.yml
   tasks:
     - name: Print URL
       ansible.builtin.debug:
