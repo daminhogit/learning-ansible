@@ -1,5 +1,6 @@
 - name: Demo on vars play level
   hosts: all
+  connection: local
   vars:
     URL: play.example.com
   tasks:
@@ -10,6 +11,7 @@
 
 - name: Demo on vars on task level
   hosts: all
+  connection: local
   tasks:
     - name: Print URL
       ansible.builtin.debug:
@@ -19,6 +21,7 @@
 
 - name: Demo on vars from file on play level
   hosts: all
+  connection: local
   vars_files:
     - sample-vars.yml
   tasks:
@@ -28,6 +31,7 @@
 
 - name: Vars from Inventory file
   hosts: all
+  connection: local
   tasks:
     - name: Print URL
       ansible.builtin.debug:
