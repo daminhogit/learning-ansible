@@ -26,14 +26,6 @@
       ansible.builtin.debug:
         msg: URL {{ URL }}
 
-- name: Vars from Inventory file
-  hosts: localhost
-  tasks:
-    - name: Print URL
-      ansible.builtin.debug:
-        msg: URL = {{ URL }}
-
-
 - name: Access fact
   hosts: localhost
   tasks:
